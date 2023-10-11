@@ -101,6 +101,7 @@ class assignment2 {
         return -1;
     }
 
+    // The main (The driver)
     public static void main(String[] args){
 
         // initialize a scanner
@@ -118,6 +119,11 @@ class assignment2 {
         int foundIndexNum = -1;
 
         // ask for user input
+        System.out.println("Linear Search");
+        System.out.println("------------------------------");
+        for (int i = 0; i < arrayNum.length;i++)
+            System.out.print(arrayNum[i] + " ");
+        System.out.println();
         System.out.println("Enter a number to search using linear search: ");
         key = input.nextInt();
 
@@ -127,17 +133,27 @@ class assignment2 {
         if(foundIndexNum != -1){
             System.out.println("Found the key at index: " + foundIndexNum);
         }else{
-            System.out.println("cant find")
+            System.out.println("cant find");
         }
         System.out.println();
 
         // clear scanner for next input
         input.nextLine();
 
+        System.out.println("Selection Sort");
+        System.out.println("------------------------------");
         // sorting the array using selection sort
         selectionSort(arrayNum);
 
         // shows the array is now sorted
+        for(int i = 0; i<arrayNum.length; i++){
+            System.out.print(arrayNum[i] + " ");
+        }
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Binary Search");
+        System.out.println("------------------------------");
         for(int i = 0; i<arrayNum.length; i++){
             System.out.print(arrayNum[i] + " ");
         }

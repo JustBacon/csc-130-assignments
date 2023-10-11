@@ -47,5 +47,6 @@ class assignment1 {
             System.out.println("Run time: " + runtime + "ms");
         }
 
+        input.close();
     }
 }
