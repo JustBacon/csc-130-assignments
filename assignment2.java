@@ -56,7 +56,7 @@ class assignment2 {
         int right = arr.length - 1;
 
         while (left <= right) {
-            int middle = left + (right - 1) / 2;
+            int middle = (left + right) / 2;
 
             if (arr[middle] == key){
                 comparisonCounter++;
@@ -70,7 +70,7 @@ class assignment2 {
                 comparisonCounter++;
             }
 
-            if(arr[middle] > key){
+            else{
                 right = middle - 1;
                 comparisonCounter++;
             }
