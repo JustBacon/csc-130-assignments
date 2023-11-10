@@ -74,7 +74,7 @@ class assignment3_part1 {
 
     // The main (The driver)
     public static void main(String[] args) {
-        String filename = "assignment3_test_file.java";
+        String filename = "assignment3_part1_test.java";
 
         isProperlyNested(filename);
     }
